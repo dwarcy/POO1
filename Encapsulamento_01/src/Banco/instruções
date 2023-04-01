@@ -1,0 +1,4 @@
+Adicione ao programa Java relativo a um sistema bancário modificado
+na questão anterior as funcionalidades a seguir:
+ - Relatório de Clientes negativados
+ - Relatório de clientes que possuem idades dentro de um intervalo (fornecido pelo usuário)
