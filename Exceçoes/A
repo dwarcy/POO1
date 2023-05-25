@@ -1,0 +1,31 @@
+package A;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner leitor = new Scanner(System.in);
+        int ct = 0;
+        float n = 0;
+        boolean correto = false;
+
+
+        while (correto == false && ct < 3) {
+            try {
+                System.out.println("Insira o Numero: ");
+                n = leitor.nextFloat();
+                correto = true;
+            } catch (InputMismatchException e){
+                System.out.println("Numero Informado Invalido. Tente Novamente.");
+                leitor.nextLine();
+                ct++;
+            }
+        }
+
+        if (ct == 3){
+            System.out.println("Limite de Tentativas Excedido.");
+        } else {
+            System.out.println("Numero Informado: "+n);
+        }
+    }
+}
